@@ -1,7 +1,4 @@
 import torch
-import torch.nn as nn
-import torch.optim as optim
-import numpy as np
 from collections import Counter
 from torch.utils.data import Dataset, DataLoader
 from nltk.tokenize import word_tokenize
@@ -22,7 +19,6 @@ for token in Counter(tokens).keys():
     if token not in vocab:
         vocab[token] = len(vocab)
 
-# print(f'Vocab size: {len(vocab)}')
 
 # list sentences
 input_sentences = document.split('\n')
@@ -46,7 +42,6 @@ input_numerical_sentences = []
 for sentence in input_sentences:
     input_numerical_sentences.append(text_to_indices(word_tokenize(sentence.lower()),vocab))
 
-# print(input_numerical_sentences[:5])
 
 
 # making training sequence
@@ -55,7 +50,6 @@ for sentence in input_numerical_sentences:
     for i in range(1,len(sentence)):
         training_sequences.append((sentence[:i+1]))
 
-# print(f'Total training sequences: {len(training_sequences)}')
 
 #padding sequences to make it uniform length
 # --- find max length of sequence ---
@@ -71,11 +65,9 @@ padded_training_sequences = []
 for sequence in training_sequences:
     padded_training_sequences.append([0]*(max_len - len(sequence)) + sequence)
 
-# print(padded_training_sequences[:5])
 
 # convert to tensor
 padded_training_sequences = torch.tensor(padded_training_sequences, dtype=torch.long)
-# print(padded_training_sequences.shape)
 
 
 #split input and output from each sequence
@@ -93,13 +85,13 @@ class NextWordDataset(Dataset):
         self.y = y
     
     def __len__(self):
-        return len(self.X[0])
+        return len(self.X)
     
     def __getitem__(self, idx):
         return self.X[idx], self.y[idx]
 
 dataset = NextWordDataset(X,y)
-dataloader = DataLoader(dataset, batch_size=32, shuffle=True)
+dataloader = DataLoader(dataset, batch_size=16, shuffle=True)
 
 # test dataloader
 # for inputs, targets in dataloader:

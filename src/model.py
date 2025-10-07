@@ -1,5 +1,5 @@
 import torch.nn as nn
-from dataset import vocab
+from src.dataset import vocab
 
 class LSTMModel(nn.Module):
     def __init__(self, vocab_size):
