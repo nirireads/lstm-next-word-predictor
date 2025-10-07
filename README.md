@@ -1,4 +1,3 @@
-# lstm-next-word-predictor
 # Next Word Predictor 📝
 
 A deep learning project that predicts the next word in a sentence using an LSTM model built with PyTorch. The project includes data preprocessing, vocabulary building, training sequences, and a Streamlit interface for interactive word prediction.
