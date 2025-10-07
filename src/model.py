@@ -1,4 +1,5 @@
 import torch.nn as nn
+from dataset import vocab
 
 class LSTMModel(nn.Module):
     def __init__(self, vocab_size):
@@ -13,3 +14,4 @@ class LSTMModel(nn.Module):
         output = self.fc(hidden_state.squeeze(0))
         return output
 
+model = LSTMModel(vocab_size=len(vocab))

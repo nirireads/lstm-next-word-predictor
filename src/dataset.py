@@ -75,7 +75,7 @@ for sequence in training_sequences:
 
 # convert to tensor
 padded_training_sequences = torch.tensor(padded_training_sequences, dtype=torch.long)
-print(padded_training_sequences.shape)
+# print(padded_training_sequences.shape)
 
 
 #split input and output from each sequence
