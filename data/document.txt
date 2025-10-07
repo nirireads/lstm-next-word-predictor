@@ -1,0 +1,598 @@
+document = """
+Hey, how are you doing today?
+I'm good, just chilling at home. You?
+Not much, just came back from work.
+OMG, did you see the latest episode?
+Yeah, it was insane! Can't believe what happened.
+Haha, I know right? Totally didn't expect that.
+Wanna grab coffee later?
+Sure, around 5 pm?
+Perfect, see you then.
+Did you finish the homework?
+Not yet, I'm stuck on question 3.
+No worries, I can help you out.
+Thanks, you're a lifesaver!
+Are you coming to the party tonight?
+Maybe, depends if I finish my project.
+Alright, let me know. It's gonna be fun!
+I just got a new phone!
+Nice! Which one?
+The latest iPhone, loving it so far.
+Cool, can't wait to see it.
+Do you want to play some games later?
+Yeah, sure! Which game?
+Maybe Among Us or Fortnite?
+Sounds good, let's start at 7.
+Can't believe it's already Friday.
+I know, this week flew by so fast.
+Are you free this weekend?
+Yeah, thinking about going to the park.
+Want to join me for a walk?
+Sure, that sounds fun.
+Don't forget to bring some snacks.
+Absolutely, I'll bring some chips and soda.
+Did you hear about the concert next month?
+Yeah, it's gonna be amazing!
+We should definitely get tickets.
+Totally, let's do it soon.
+I can't wait, it's been ages since the last one.
+Same here, I'm super excited.
+Have you tried the new cafe downtown?
+Not yet, but I heard it's really good.
+We should go check it out sometime.
+Yes, let's plan for this weekend.
+Are you working on the project for class?
+Yeah, it's almost done.
+Need any help?
+Maybe later, thanks.
+No problem, just let me know.
+Did you see the game last night?
+Yeah, it was crazy!
+I didn't expect that ending.
+I know, right? The last goal was insane.
+Let's catch up later.
+Sure, text me when you're free.
+I have a new series I started watching.
+Oh cool, what's it called?
+It's called "The Unseen World".
+Sounds interesting, what's it about?
+It's about a detective solving mysteries in a futuristic city.
+Wow, I might check that out.
+You should, the first episode was really good.
+Do you want to hang out tomorrow?
+Yeah, let's meet at the mall.
+Perfect, see you at 4 pm.
+Don't forget your wallet.
+Of course, I won't.
+Did you do your laundry?
+Not yet, planning to do it tonight.
+Need some help with that?
+Nah, I got it.
+Have you tried the new pizza place?
+Yeah, their pepperoni pizza is amazing.
+We should go there sometime.
+Sure, maybe this Friday?
+Sounds perfect.
+Did you call your mom today?
+Yes, we chatted for a while.
+That's nice.
+Yeah, it was good to catch up.
+Are you free this evening?
+I think so, why?
+Want to go for a movie?
+Sure, which one?
+The new action movie.
+Awesome, let's do it.
+Don't be late!
+I won't, see you there.
+Do you remember our trip last summer?
+Of course, that was so much fun.
+We should plan another one.
+Absolutely, maybe next month.
+I got a new pair of shoes today.
+Nice, show me a pic later.
+Will do, they are really comfortable.
+Did you hear from Alex?
+Yeah, he said he's coming over this weekend.
+Cool, we should all hang out.
+Definitely.
+Do you want to study together later?
+Sure, maybe at the library.
+Perfect, see you there.
+I need to finish my homework first.
+Yeah, me too.
+Want some coffee before we start?
+Yes, please.
+Did you watch the new episode of that show?
+Not yet, saving it for tonight.
+Okay, don't spoil it for me!
+I won't, promise.
+Are you going to the festival this weekend?
+Yes, can't wait!
+Me too, it should be fun.
+We should go together.
+Absolutely, let's meet at the entrance.
+Do you want to order food later?
+Sure, pizza or burgers?
+Pizza sounds good.
+Great, I'll order online.
+Did you finish the book I lent you?
+Almost, just a few chapters left.
+How is it?
+Really good, can't put it down.
+I need to return it soon.
+No worries, take your time.
+Did you check your emails today?
+Yes, a few important ones.
+Okay, let's discuss them later.
+Sure.
+Are you coming to the meeting tomorrow?
+Yes, I set a reminder.
+Good, see you there.
+Do you want to play some basketball later?
+Yeah, let's do it at 6.
+Perfect, see you at the court.
+Did you see the new movie trailer?
+Yeah, looks awesome.
+We should watch it together.
+Definitely.
+Do you want to join the study group?
+Sure, that would be helpful.
+Awesome, I'll add you to the group chat.
+Have you tried the new dessert place?
+Not yet, heard it's amazing.
+We should go this weekend.
+Yes, let's do that.
+Did you finish the assignment?
+Almost done.
+Need any help?
+No, I got it.
+Do you want to grab lunch later?
+Sure, where?
+The new cafe downtown.
+Perfect, let's go.
+Did you call your friend today?
+Yes, we talked for a while.
+Good, how's she doing?
+She's fine, thanks for asking.
+Do you want to play some video games?
+Yeah, maybe later tonight.
+Cool, we can start at 8.
+Did you check the news today?
+Not yet, anything important?
+Just some updates about the local events.
+Okay, thanks for letting me know.
+Do you want to join me for a walk later?
+Sure, around 5 pm?
+Perfect, see you then.
+Did you finish your chores?
+Almost done.
+Great, then we can hang out.
+Do you want to watch a series tonight?
+Yes, any suggestions?
+Maybe the new comedy show.
+Sounds good, let's start at 7.
+Did you finish reading that article?
+Not yet, saving it for later.
+Okay, let's discuss it tomorrow.
+Did you try the new coffee blend?
+Yes, it tastes amazing.
+We should get some more.
+Absolutely.
+Do you want to bake something this weekend?
+Sure, what should we make?
+Maybe cookies or a cake.
+Sounds perfect.
+Did you water the plants today?
+Yes, just did it.
+Good, the garden looks fresh.
+Do you want to play soccer later?
+Yeah, let's meet at the park.
+Perfect, see you there.
+Did you clean your room?
+Almost done.
+Great, then we can play some games.
+Do you want to try the new restaurant?
+Yes, I've heard good reviews.
+Let's go tomorrow.
+Did you take a walk today?
+Not yet, planning to in the evening.
+Okay, let's go together.
+Do you want to watch a movie tonight?
+Sure, which one?
+The new thriller movie.
+Sounds good.
+Did you finish your shopping?
+Almost, just a few things left.
+Okay, let's meet later.
+Do you want to play cards?
+Yeah, let's start at 6.
+Perfect, see you then.
+Did you call your parents today?
+Yes, talked to them in the morning.
+That's nice.
+Do you want to go hiking this weekend?
+Sure, sounds fun.
+Let's plan it.
+Did you finish your painting?
+Almost done.
+Can't wait to see it.
+Do you want to bake cupcakes later?
+Yes, let's start at 4.
+Perfect.
+Did you water the plants?
+Yes, just now.
+Great.
+Do you want to watch the football game later?
+Yeah, let's start at 7.
+Perfect.
+Did you finish your essay?
+Almost, need some final touches.
+Okay, let's review it together.
+Do you want to go cycling tomorrow?
+Sure, let's meet at the park.
+Sounds good.
+Did you check your emails?
+Yes, replied to the important ones.
+Good job.
+Do you want to play chess later?
+Yes, let's start at 5.
+Perfect.
+Did you finish reading the novel?
+Almost done, really interesting.
+Can't wait to discuss it.
+Do you want to join the art class?
+Sure, sounds fun.
+Let's go.
+Did you try the new smoothie place?
+Yes, really delicious.
+We should go again.
+Absolutely.
+Do you want to do yoga later?
+Yeah, let's start at 6.
+Perfect.
+Did you clean the kitchen?
+Almost done.
+Good, then we can relax.
+Do you want to play ping pong later?
+Sure, let's start at 5.
+Perfect.
+Did you finish your project?
+Almost done, just need some finishing touches.
+Great, let's review it together.
+Do you want to go for a drive?
+Yes, sounds fun.
+Let's go.
+Did you check your messages?
+Yes, replied to the important ones.
+Good.
+Do you want to go swimming tomorrow?
+Sure, let's meet at the pool.
+Sounds good.
+Did you finish the puzzle?
+Almost done.
+Great.
+Do you want to bake a pie later?
+Yes, let's start at 4.
+Perfect.
+Do you want to watch cartoons?
+Sure, sounds fun.
+Let's start at 3.
+Did you finish your notes?
+Almost done, need a few corrections.
+Okay, let's review them.
+Do you want to play video games later?
+Yes, let's start at 6.
+Perfect.
+Did you clean the bathroom?
+Almost done.
+Good, then we can relax.
+Do you want to make lemonade?
+Sure, let's start at 5.
+Perfect.
+Did you finish your drawing?
+Almost done.
+Can't wait to see it.
+Do you want to play board games?
+Yes, let's start at 4.
+Perfect.
+Did you check your phone messages?
+Yes, replied to the important ones.
+Good.
+Do you want to go to the beach tomorrow?
+Sure, sounds fun.
+Let's go.
+Did you finish your chores?
+Almost done.
+Great, then we can play outside.
+Do you want to bake cookies later?
+Yes, let's start at 3.
+Perfect.
+Did you water the garden?
+Yes, just did it.
+Good.
+Do you want to watch a movie?
+Sure, which one?
+The new animation film.
+Sounds fun.
+Did you clean your room?
+Almost done.
+Good.
+Do you want to go hiking tomorrow?
+Sure, let's meet at 7 am.
+Perfect.
+Did you finish your homework?
+Almost done.
+Okay, let's review it together.
+Do you want to play soccer later?
+Yes, let's start at 4.
+Perfect.
+Did you try the new café?
+Yes, really nice.
+We should go again.
+Absolutely.
+Do you want to go cycling tomorrow?
+Sure, sounds fun.
+Let's plan it.
+Did you check your emails?
+Yes, replied to the important ones.
+Good job.
+Do you want to play badminton later?
+Yes, let's start at 5.
+Perfect.
+Did you finish your reading?
+Almost done.
+Can't wait to discuss it.
+Do you want to bake muffins later?
+Yes, let's start at 4.
+Perfect.
+Did you clean the kitchen?
+Almost done.
+Good.
+Do you want to watch cartoons?
+Sure, sounds fun.
+Let's start at 3.
+Did you finish your project?
+Almost done.
+Great.
+Do you want to play board games later?
+Yes, let's start at 6.
+Perfect.
+Did you water the plants?
+Yes, just did it.
+Good.
+Do you want to go for a swim tomorrow?
+Sure, sounds fun.
+Let's go.
+Did you finish your painting?
+Almost done.
+Can't wait to see it.
+Do you want to bake a cake later?
+Yes, let's start at 5.
+Perfect.
+Did you check your phone messages?
+Yes, replied to the important ones.
+Good.
+Do you want to watch a movie?
+Sure, which one?
+The new thriller film.
+Sounds fun.
+Did you clean your room?
+Almost done.
+Good.
+Do you want to play soccer later?
+Yes, let's start at 4.
+Perfect.
+Did you finish your homework?
+Almost done.
+Okay, let's review it together.
+Do you want to go cycling tomorrow?
+Sure, sounds fun.
+Let's meet at 7 am.
+Perfect.
+Did you try the new smoothie?
+Yes, really good.
+We should get it again.
+Absolutely.
+Do you want to bake cookies later?
+Yes, let's start at 3.
+Perfect.
+Did you water the garden?
+Yes, just did it.
+Good.
+Do you want to paint later?
+Yes, I brought my new brushes.
+Perfect, let's get started.
+Did you finish reading your comic book?
+Almost done, it's so exciting.
+I can't wait to discuss the plot.
+Do you want to practice guitar today?
+Sure, maybe an hour or so.
+Great, we can learn a new song together.
+Did you finish your sketch?
+Almost, I still need to add colors.
+Do you want to bake brownies later?
+Yes, sounds delicious.
+Perfect, I'll bring the ingredients.
+Did you water your plants today?
+Yes, all of them.
+Good, they look healthy.
+Do you want to go for a bike ride tomorrow?
+Sure, let's meet at the park.
+Perfect, I can't wait.
+Did you practice piano today?
+Yes, I learned a new piece.
+Wow, that's awesome.
+Do you want to play video games later?
+Sure, maybe some co-op games.
+Great, let's start at 6 pm.
+Did you finish your journal entry?
+Almost, just writing the conclusion.
+Cool, I love reading your thoughts.
+Do you want to bake cookies this evening?
+Yes, let's make chocolate chip ones.
+Perfect, I'll bring the chocolate.
+Did you finish your yoga routine?
+Almost, feeling really relaxed.
+Nice, that must be refreshing.
+Do you want to go hiking this weekend?
+Yes, let's pack some snacks.
+Great, the weather will be perfect.
+Did you complete your painting?
+Almost, just a few details left.
+Can't wait to see it.
+Do you want to play chess later?
+Sure, maybe 30 minutes.
+Perfect, let's set up the board.
+Did you finish your craft project?
+Almost done, it's looking good.
+Great, we can show it to friends.
+Do you want to try photography tomorrow?
+Yes, I got a new camera lens.
+Perfect, let's capture some landscapes.
+Did you practice your dance moves?
+Yes, I learned the new routine.
+Wow, I want to see it.
+Do you want to bake a cake later?
+Sure, maybe a fruit cake.
+Perfect, let's start at 4 pm.
+Did you finish reading your novel?
+Almost done, really enjoying it.
+Cool, we should discuss it tomorrow.
+Do you want to play badminton later?
+Yes, let's start at 5 pm.
+Perfect, I'll bring the shuttlecocks.
+Did you complete your music practice?
+Almost, I learned a new song.
+That's awesome, can't wait to hear it.
+Do you want to paint together today?
+Yes, let's try watercolor this time.
+Perfect, I brought some new paints.
+Did you water the garden plants?
+Yes, everything looks fresh.
+Good, it's nice to see them healthy.
+Do you want to try knitting later?
+Sure, I want to finish my scarf.
+Great, let's sit together and knit.
+Did you practice your sketching today?
+Almost done, just adding details.
+Nice, I want to see your work.
+Do you want to bake muffins later?
+Yes, chocolate muffins sound good.
+Perfect, I'll bring the ingredients.
+Did you finish your dance practice?
+Almost, feeling confident.
+Awesome, I want to see your moves.
+Do you want to go for a run tomorrow?
+Yes, let's start early.
+Perfect, the weather will be nice.
+Did you finish reading your magazine?
+Almost done, really interesting.
+Great, we should discuss it tomorrow.
+Do you want to play cards tonight?
+Sure, let's start at 7 pm.
+Perfect, I'll bring the deck.
+Did you practice your guitar chords?
+Almost, just a few left.
+Cool, I want to jam together later.
+Do you want to bake bread today?
+Yes, let's try sourdough.
+Perfect, I brought the yeast.
+Did you water your indoor plants?
+Yes, all of them.
+Good, they look healthy.
+Do you want to try painting on canvas later?
+Sure, let's get creative.
+Perfect, I got some new brushes.
+Did you finish reading the short story?
+Almost done, it's really engaging.
+Great, we can discuss the plot tomorrow.
+Do you want to practice yoga this evening?
+Yes, I need to relax.
+Perfect, let's start at 6 pm.
+Did you complete your craft project?
+Almost, just adding finishing touches.
+Awesome, can't wait to see it.
+Do you want to play basketball later?
+Sure, let's meet at the court.
+Perfect, I'll bring the ball.
+Did you practice your piano lesson?
+Almost done, feeling better.
+Great, I want to hear it later.
+Do you want to bake some cookies today?
+Yes, chocolate chip sounds perfect.
+Perfect, let's get started.
+Did you finish watering the garden?
+Yes, all done.
+Good, the flowers look nice.
+Do you want to do some sketching later?
+Sure, maybe a landscape.
+Perfect, I brought my sketchbook.
+Did you practice your singing today?
+Yes, learned a new song.
+Awesome, can't wait to hear it.
+Do you want to go cycling tomorrow?
+Yes, let's ride to the park.
+Perfect, I'll bring my bike.
+Did you finish your painting project?
+Almost, just a few details left.
+Great, I want to see it.
+Do you want to bake a cake later?
+Yes, let's do a chocolate cake.
+Perfect, I'll bring the ingredients.
+Did you practice your guitar today?
+Almost, just a few chords.
+Cool, let's play together later.
+Do you want to do some photography tomorrow?
+Yes, I got a new camera lens.
+Perfect, let's capture some cool shots.
+Did you finish your reading assignment?
+Almost done, it's really interesting.
+Great, we can discuss it.
+Do you want to play soccer later?
+Sure, let's meet at the field.
+Perfect, I'll bring the ball.
+Did you practice your dance routine?
+Almost, feeling more confident.
+Awesome, I want to see it later.
+Do you want to bake muffins today?
+Yes, let's try blueberry ones.
+Perfect, I'll bring the ingredients.
+Did you finish your sketching?
+Almost, just adding some details.
+Cool, can't wait to see your art.
+Do you want to go hiking tomorrow?
+Yes, let's meet at 7 am.
+Perfect, the weather should be nice.
+Did you water the garden plants?
+Yes, all done.
+Good, they look healthy.
+Do you want to paint together today?
+Sure, I got some new paints.
+Perfect, let's start.
+Did you finish your music practice?
+Almost, learned a new song.
+Awesome, can't wait to hear it.
+Do you want to bake cookies later?
+Yes, chocolate chip ones sound good.
+Perfect, let's start.
+Did you practice your yoga today?
+Almost done, feeling relaxed.
+Great, let's meditate together later.
+Do you want to play board games tonight?
+Sure, let's start at 7 pm.
+Perfect, I'll bring the game.
+Did you finish reading your book?
+Almost done, really interesting.
+Great, we can discuss it tomorrow.
+Do you want to bake a cake later?
+Yes, let's try a fruit cake.
+Perfect, I brought the ingredients.
+Did you water your indoor plants?
+Yes, all done.
+Good, they look healthy.
+Do you want to practice guitar together?
+Sure, let's jam for a while.
+Perfect, I brought my guitar.
+"""
+
