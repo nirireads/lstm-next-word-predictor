@@ -1,4 +1,3 @@
-document = """
 Hey, how are you doing today?
 I'm good, just chilling at home. You?
 Not much, just came back from work.
@@ -594,5 +593,4 @@ Good, they look healthy.
 Do you want to practice guitar together?
 Sure, let's jam for a while.
 Perfect, I brought my guitar.
-"""
 
